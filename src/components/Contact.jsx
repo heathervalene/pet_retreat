@@ -3,8 +3,8 @@
 
 const Contact = () => {
     return (
-        <div className="btn">
-            <button>Contact</button>
+        <div className="container form">
+            <h2 className="body-text">Contact</h2>
         </div>
     )
 }

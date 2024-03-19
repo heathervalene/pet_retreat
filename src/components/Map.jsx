@@ -11,7 +11,7 @@ const imageUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${center
 
     return (
         <div className="container map">
-            <h4>Location</h4>
+            <h4 className="body-text">Location</h4>
             <img src={imageUrl} alt="map" />
             <div className="address">Address: 4140 Orange River Loop Rd, Ft. Myers Florida 33905</div>
         </div>
