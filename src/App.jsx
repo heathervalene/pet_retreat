@@ -1,3 +1,5 @@
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/Nav'
 import Home from './components/Home'
 import About from './components/About'
 import Map from './components/Map'
@@ -9,13 +11,24 @@ import './App.css'
 const App = () => {
   return (
     <div>
-      <Home />
-      <Contact />
-      <Services />
-      <About />
-      <Map />
-      <ImageGallery />
-    
+      <header>
+        <Nav />
+      </header>
+      <main>
+        <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/map' element={<Map />} />
+      <Route path='/gallery' element={<ImageGallery />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/services' element={<Services />} />
+      </Routes>
+      </main>
+    <footer className="footer-copyright">
+      <div className="container">
+      &copy; 2024 The Pet Retreat
+      </div>
+    </footer>
     </div>
   );
 };
