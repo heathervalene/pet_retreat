@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const Contact = () => {
   const [boardingType, setBoardingType] = useState('');
@@ -19,32 +19,34 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
+
+    // Need to add emailJS logic here to send form data
+    
   };
 
   return (
     <div>
-      <h2>Contact Us</h2>
+      <h2 className="heading">Contact The Pet Retreat</h2>
+      <div className="container">
       <form onSubmit={handleSubmit}>
-        <div className="input-field">
-          <select value={boardingType} onChange={(e) => setBoardingType(e.target.value)}>
-            <option value="" disabled selected>Select Boarding Type</option>
-            <option value="long-term">Long Term Boarding</option>
-            <option value="day-care">Day Care</option>
-          </select>
-          <label>Boarding Type</label>
-        </div>
-
-        <div className="input">
+      <div>
+  <label>Boarding Type:</label>
+  <select value={boardingType} onChange={(e) => setBoardingType(e.target.value)}>
+    <option value="" disabled>Select Boarding Type</option>
+    <option value="long-term">Long Term Boarding</option>
+    <option value="day-care">Day Care</option>
+  </select>
+</div>
+        <div>
+        <label>Drop Off</label>
           <input type="date" value={dropOffTime} onChange={(e) => setDropOffTime(e.target.value)} />
-          <label>Drop Off</label>
-        </div>
-        <div className="input">
-          <input type="date" value={pickUpTime} onChange={(e) => setPickUpTime(e.target.value)} />
-          <label>Pick Up</label>
         </div>
         <div>
-          <h4>Dog Information</h4>
+        <label>Pick Up</label>
+          <input type="date" value={pickUpTime} onChange={(e) => setPickUpTime(e.target.value)} />
+        </div>
+        <div>
+          <h6>Dog Information</h6>
           {dogInfo.map((dog, index) => (
             <div key={index}>
               <input type="text" value={dog.name} onChange={(e) => handleChangeDogInfo(index, 'name', e.target.value)} placeholder='Name'/>
@@ -56,12 +58,14 @@ const Contact = () => {
           ))}
           <button type="button" onClick={handleAddDogInfo}>Add Your Dog Info</button>
         </div>
-        <div className="input-field">
-          <textarea className="materialize-textarea" value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Message'></textarea>
+        <div>
+        <label>Message:</label>
+          <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Share a little bit about your dog and why they would have a great time at the Pet Retreat' ></textarea>
           
         </div>
         <button className="btn waves-effect waves-light" type="submit">Send</button>
       </form>
+      </div>
     </div>
   );
 };
