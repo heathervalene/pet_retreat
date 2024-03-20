@@ -21,12 +21,12 @@ const Contact = () => {
     e.preventDefault();
 
     // Need to add emailJS logic here to send form data
-    
+
   };
 
   return (
     <div>
-      <h2 className="heading">Contact The Pet Retreat</h2>
+      <h2 className="heading">Book at the Pet Retreat</h2>
       <div className="container">
       <form onSubmit={handleSubmit}>
       <div>

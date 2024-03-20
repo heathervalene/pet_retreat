@@ -29,3 +29,38 @@ font-family: "Gafata", sans-serif;
   margin: 5px;
 }
 
+.contact {
+  margin-right: 40px;
+  font-size: 30px;
+}
+
+
+/*Home page*/
+
+.home-body {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+
+
+/*About page*/
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  height: 300px;
+  width: 300px;
+  margin-left: 370px;
+  margin-bottom: 25px;
+  border: 2px solid black;
+  border-radius: 75px;
+}
+
+.about-body {
+  font-size: 25px;
+}
+
