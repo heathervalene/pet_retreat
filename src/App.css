@@ -48,14 +48,13 @@ font-family: "Gafata", sans-serif;
 
 .about-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-img {
-  height: 300px;
-  width: 300px;
-  margin-left: 370px;
-  margin-bottom: 25px;
+  height: auto;
+  width: 400px;
   border: 2px solid black;
   border-radius: 75px;
 }
@@ -63,4 +62,27 @@ font-family: "Gafata", sans-serif;
 .about-body {
   font-size: 25px;
 }
+
+.location-header {
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.map-img {
+  height: auto;
+  width: 500px;
+
+}
+
+.address {
+  font-size: 25px;
+}
+
+
+
+
+
+
+
 

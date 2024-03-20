@@ -10,10 +10,8 @@ const markers = 'color:red%7%7C26.680626028879527, -81.75179300843806'
 const imageUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${center}&zoom=${zoom}&size=${size}&markers=${markers}&key=${apiKey}`
 
     return (
-        <div className="container map">
-            
-            <img src={imageUrl} alt="map" />
-            
+        <div >
+            <img className="map-img" src={imageUrl} alt="map" />
         </div>
     )
 }
