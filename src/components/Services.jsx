@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 
 const Services = () => {
     return (
@@ -13,7 +13,7 @@ const Services = () => {
         <h3>Daycare</h3>
         <p>Give your furry friend the ultimate day-care experience at The Pet Retreat! We offer a stimulating and fun-filled environment where dogs can socialize, exercise, and play under our watchful eye. Located on 5 acres of fenced land, our day-care guests have ample space to run, romp, and explore to their heart's content. Whether your pup needs a full day of fun or just a few hours of companionship, trust The Pet Retreat to provide the love and care they deserve.</p>
       </div>
-      
+      <Link to="/contact" className="btn btn-primary book">Book Now</Link>
     </div>
     </div>
   )
