@@ -163,6 +163,28 @@ h5.collapsible-header {
   background-color: #AF9164;
 }
 
+/*Reviews*/
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.review {
+  font-size: 18px;
+  border: 3px solid #2B2118;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.google-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

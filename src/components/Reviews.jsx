@@ -4,6 +4,8 @@ const Reviews = () => {
     return (
         <div>
             <h1 className="heading">Reviews</h1>
+            <div className="container google-reviews">
+            <a href="https://g.page/r/CaSeGv4r1gUxEAI/review" target="_blank" rel="noreferrer"> <i></i> Leave us a review on Google</a></div>
             <div className="container body-text reviews">
                 <div className="review">"Very nice property! Plenty of space for the dogs to enjoy playing around the ponds ,fountain and beautifully well maintained property. Guido is very friendly and seems quite knowledgeable. Made me feel very comfortable being there. My dog Cassie enjoyed her stay very much! They even sent me videos of the dogs playing." - William I</div>
                 <div className="review">"Guido and Mark are absolutely fantastic. They have a huge property for the dogs to run and the dogs are clearly treated like their own with lots of comfy areas to sleep and play. Their property is immaculate. As soon as I pulled onto their street the day after our initial meet and greet, my dog knew where he was and could barely wait to get back into their tropical oasis to see his new friends. He is now home, tired and very happy. I can’t recommend Mark and Guido highly enough. We will definitely use them again." - Mimi G</div>
