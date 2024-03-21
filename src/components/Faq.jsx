@@ -15,7 +15,7 @@ const Faq = () => {
         <div>
             <div className="container">
             <h1 className="heading">Frequently Asked Questions</h1>
-            <ul className=" collapsible body-text">
+            <ul className=" collapsible body-text faq-list">
                 <li>
             <h5 className="collapsible-header">Can I schedule a meet & greet before my reservation?</h5>
             <h6 className="collapsible-body">Yes! In fact, we recommend it so your pup can meet us, check out the property and the other dogs.</h6>
