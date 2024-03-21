@@ -1,9 +1,23 @@
+import { useEffect } from "react";
+import M from "materialize-css";
+
 
 
 const ImageGallery = () => {
+
+
+useEffect(() => {
+    const carousels = document.querySelectorAll('.carousel');
+    M.Carousel.init(carousels, {
+  
+      
+    })
+} , []);
+
+
     return (
-      <div className="container image"> 
-        <h1 className="body-text">Image Gallery</h1>
+      <div className="container image-container"> 
+        <h1 className="body-text center">Image Gallery</h1>
         <div className="carousel">
           <a className="carousel-item" href="#one!">
             <img src="https://i.imgur.com/sxWoLrA.jpeg" alt="dog" />

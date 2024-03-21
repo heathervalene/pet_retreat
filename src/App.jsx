@@ -29,9 +29,7 @@ const App = () => {
       </Routes>
       </main>
     <footer className="footer-copyright">
-      <div className="container">
       &copy; 2024 The Pet Retreat
-      </div>
     </footer>
     </div>
   );

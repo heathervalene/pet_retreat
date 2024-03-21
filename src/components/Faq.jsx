@@ -13,8 +13,9 @@ const Faq = () => {
 
     return (
         <div>
+            <div className="container">
             <h1 className="heading">Frequently Asked Questions</h1>
-            <ul className=" collapsible container faq-list body-text">
+            <ul className=" collapsible body-text">
                 <li>
             <h5 className="collapsible-header">Can I schedule a meet & greet before my reservation?</h5>
             <h6 className="collapsible-body">Yes! In fact, we recommend it so your pup can meet us, check out the property and the other dogs.</h6>
@@ -50,6 +51,7 @@ const Faq = () => {
             </ul>
             <div className="container body-text">
                <h5> Didn't find your answer? Feel free to <Link to="/contact">contact us</Link> and we'll get back to you as soon as possible.</h5>
+            </div>
             </div>
         </div>
     )
