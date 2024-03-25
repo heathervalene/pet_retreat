@@ -22,6 +22,16 @@ body {
 
 
 
+@media only screen and (max-width: 992px) {
+
+  .heading {
+    font-size: 50px;
+  }
+  
+}
+
+
+
 
 
 /*Nav*/
@@ -39,7 +49,6 @@ body {
 padding: 5px;
 margin-right: 15px;
 font-family: "Gafata", sans-serif;
-color: #F7F3E3;
 }
 
 .brand-logo {
@@ -54,9 +63,19 @@ color: #F7F3E3;
 }
 
 
+@media only screen and (max-width: 992px) {
+  
+  .sidenav {
+    display: block;
+  }
+
+  .contact {
+    font-size: 18px;
+  }
+}
+
+
 /*Home page*/
-
-
 
 .background-image {
   position: absolute;
@@ -94,7 +113,16 @@ color: #F7F3E3;
   border-radius:20px;
 }
 
+@media only screen and (max-width: 992px) {
+.content {
+  margin: 10px
+}
 
+ .home-body {
+  font-size: 20px;
+ }
+  
+}
 
 
 /*About page*/
@@ -152,6 +180,12 @@ color: #F7F3E3;
   font-size: 20px;
 }
 
+@media only screen and (max-width: 992px) {
+  .service-body {
+    font-size: 17px;
+  }
+}
+
 
 /*FAQ*/
 
@@ -163,6 +197,12 @@ h5.collapsible-header {
   border-radius: 10px;
   color:#F7F3E3;
   background-color: #AF9164;
+}
+
+@media only screen and (max-width: 992px) {
+  .collapsible-header {
+    font-size: 18px;
+  }
 }
 
 /*Reviews*/
