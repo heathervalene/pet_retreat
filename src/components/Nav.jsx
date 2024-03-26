@@ -12,7 +12,10 @@ const Nav = () => {
 
 
     const sideNav = document.querySelector('.sidenav');
-    M.Sidenav.init(sideNav, {});
+    M.Sidenav.init(sideNav, {
+      draggable: true,
+    });
+    
   }, []);
 
   return (
@@ -53,7 +56,6 @@ const Nav = () => {
         </li>
       </ul>
 
-      {/* Regular navigation bar for desktop view */}
       <div className="nav-wrapper">
         <nav>
           <div className="nav-wrapper">
