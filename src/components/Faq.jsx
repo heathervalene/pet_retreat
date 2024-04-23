@@ -14,7 +14,7 @@ const Faq = () => {
     return (
         <div>
             <div className="container">
-            <h1 className="heading">Frequently Asked Questions</h1>
+            <h1 className="heading faq-header">Frequently Asked Questions</h1>
             <ul className=" collapsible body-text faq-list">
                 <li>
             <h5 className="collapsible-header">Can I schedule a meet & greet before my reservation?</h5>

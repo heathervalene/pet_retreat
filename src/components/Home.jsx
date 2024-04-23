@@ -8,7 +8,7 @@ const Home = () => {
             
             <div className="content">
             <h1 className="heading">The Pet Retreat</h1>
-            <h3 className="heading">Country Living for your Dogs</h3>
+            <h4 className="heading">Country Living for your Dogs</h4>
             <div className="container book">
             <Link to ="/contact" className="btn btn-primary book">Book Now</Link>
             </div>

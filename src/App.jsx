@@ -28,9 +28,6 @@ const App = () => {
       <Route path='/faq' element={<Faq />} />
       </Routes>
       </main>
-    <footer className="footer-copyright">
-      &copy; 2024 The Pet Retreat
-    </footer>
     </div>
   );
 };

@@ -38,8 +38,8 @@ const Contact = () => {
 
   return (
     <div>
-      <h2 className="heading">Book at the Pet Retreat</h2>
-      <div className="container">
+      <h2 className="heading form-heading">Book at the Pet Retreat</h2>
+      <div className="container form">
         <form onSubmit={handleSubmit}>
           <div className="input-field body-text">
             <select value={boardingType} onChange={(e) => setBoardingType(e.target.value)}>
@@ -58,7 +58,6 @@ const Contact = () => {
             <label>Pick Up</label>
           </div>
           <div>
-            <h6 className="body-text">Dog Information</h6>
             {dogInfo.map((dog, index) => (
               <div key={index}>
                 <input type="text" value={dog.name} onChange={(e) => handleChangeDogInfo(index, 'name', e.target.value)} placeholder='Name'/>
@@ -68,7 +67,7 @@ const Contact = () => {
                 <input type="text" value={dog.weight} onChange={(e) => handleChangeDogInfo(index, 'weight', e.target.value)} placeholder='Weight' />
               </div>
             ))}
-            <button type="button" onClick={handleAddDogInfo} className="btn btn-primary book">Add Your Dog Info</button>
+            <button type="button" onClick={handleAddDogInfo} className="btn btn-primary dog-info">Add Your Dog Info</button>
           </div>
           <div className="input-field body-text">
             <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className="materialize-textarea"></textarea>

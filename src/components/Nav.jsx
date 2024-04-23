@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect} from "react";
 import M from "materialize-css";
 
 const Nav = () => {
@@ -18,9 +18,35 @@ const Nav = () => {
     
   }, []);
 
+  useEffect(() => {
+    const sideNavInstance = M.Sidenav.getInstance(document.querySelector(".sidenav"));
+    const navLinks = document.querySelectorAll('.sidenav .nav-item a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        sideNavInstance.close();
+      });
+    });
+  }, []);
+
   return (
     <div>
-     
+    
+      <nav className="hide-on-med-and-up">
+        <div className="nav-wrapper">
+        <img
+              src="dog.png"
+              className="brand-logo right"
+              alt="logo"
+            />
+            <div className="nav-item right contact">
+              Contact Directly (239)-292-5183
+            </div>
+          <a href="#" data-target="mobile-nav" className="sidenav-trigger">
+            <i className="material-icons hamburger">menu</i>
+          </a>
+        </div>
+      </nav>
+
       <ul className="sidenav" id="mobile-nav">
         <li className="nav-item">
           <NavLink to="/">Home</NavLink>
@@ -56,22 +82,16 @@ const Nav = () => {
         </li>
       </ul>
 
-      <div className="nav-wrapper">
+   
+      <div className="nav-wrapper hide-on-small-only">
         <nav>
           <div className="nav-wrapper">
             <img
               src="dog.png"
               className="brand-logo left"
               alt="logo"
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                const sideNavInstance = M.Sidenav.getInstance(
-                  document.querySelector(".sidenav")
-                );
-                sideNavInstance.open();
-              }}
             />
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <ul id="nav-mobile" className="right">
               <li className="nav-item">
                 <NavLink to="/">Home</NavLink>
               </li>

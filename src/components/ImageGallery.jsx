@@ -21,7 +21,7 @@ const ImageGallery = () => {
   
     return (
       <div> 
-        <h1 className="body-text center">Image Gallery</h1>
+        <h1 className="body-text center">Gallery</h1>
         <div className= "container image-gallery">
         <div>
           <img className="materialboxed" src="https://i.imgur.com/sxWoLrA.jpeg" alt="dog" />
