@@ -1,5 +1,9 @@
 import  { useState, useEffect } from 'react';
 import M from'materialize-css';
+import emailjs from '@emailjs/browser';
+
+emailjs.init('JaibVNv_h8LR8WUc4')
+
 
 const Contact = () => {
   const [boardingType, setBoardingType] = useState('');
@@ -7,6 +11,10 @@ const Contact = () => {
   const [pickUpTime, setPickUpTime] = useState('');
   const [dogInfo, setDogInfo] = useState([]);
   const [message, setMessage] = useState('');
+  const [number, setNumber] = useState('');
+  const [owner, setOwner] = useState('');
+
+
 
   const handleAddDogInfo = () => {
     setDogInfo([...dogInfo, { name: '', breed: '', age: '', sex: '', weight: '' }]);
@@ -21,7 +29,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Need to add emailJS logic here to send form data
+    emailjs.send(
+      'service_99o7qib'
+    )
+
 
   };
 
@@ -38,7 +49,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h2 className="heading form-heading">Book at the Pet Retreat</h2>
+      <h2 className="heading form-heading">Book at Tropic Tails Farm</h2>
       <div className="container form">
         <form onSubmit={handleSubmit}>
           <div className="input-field body-text">
@@ -73,6 +84,15 @@ const Contact = () => {
             <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className="materialize-textarea"></textarea>
             <label>Share a little bit about your dog and why they would have a great time at the Pet Retreat</label>
           </div>
+          <div className="input-field body-text">
+            <input type="text" value={owner} onChange={(e) => setOwner(e.target.value)} />
+            <label>Owner Name</label>
+          </div>
+          <div className="input-field body-text">
+            <input type='tel' value={number} onChange={(e) => setNumber(e.target.value)} />
+            <label>Phone Number</label>
+          </div>
+          <div>We will contact you once we review your request.</div>
           <div className="container book">
           <button className="btn btn-primary book" type="submit">Send</button>
           </div>

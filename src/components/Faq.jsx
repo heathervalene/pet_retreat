@@ -18,7 +18,7 @@ const Faq = () => {
             <ul className=" collapsible body-text faq-list">
                 <li>
             <h5 className="collapsible-header">Can I schedule a meet & greet before my reservation?</h5>
-            <h6 className="collapsible-body">Yes! In fact, we recommend it so your pup can meet us, check out the property and the other dogs.</h6>
+            <h6 className="collapsible-body">Yes! In fact, it is required before we accept the sitting, so your pup can meet us and check out the property and the other dogs.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">Do you have your own dogs?</h5>
@@ -26,7 +26,7 @@ const Faq = () => {
             </li>
             <li>
             <h5 className="collapsible-header">What if my dog doesn't get along with other dogs?</h5>
-            <h6 className="collapsible-body">We do not keep any dogs seperated from each other, it's best your dog is friendly with other dogs to stay at the Pet Retreat.</h6>
+            <h6 className="collapsible-body">We do not keep any dogs seperated from each other, it's best your dog is friendly with other dogs to stay at Tropic Tails Farm.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">What types of dogs do you watch?</h5>
@@ -34,15 +34,15 @@ const Faq = () => {
             </li>
             <li>
             <h5 className="collapsible-header">What are your rates?</h5>
-            <h6 className="collapsible-body">We charge $40 per day/night per dog.</h6>
+            <h6 className="collapsible-body">Please check our pricing page.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">Are the dogs left alone?</h5>
-            <h6 className="collapsible-body">While we both have other jobs, the dogs are left alone inside the house no more than 4 hours a day and we are home on the weekends</h6>
+            <h6 className="collapsible-body">Someone is home at all times with the dogs.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">What do I bring for overnight stays?</h5>
-            <h6 className="collapsible-body">Bring your dog's food, treats, bedding and any medications.</h6>
+            <h6 className="collapsible-body">Bring your dog's food, treats, bedding and any medications. Please do not bring any toys.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">How do I know my dog is having a good time?</h5>

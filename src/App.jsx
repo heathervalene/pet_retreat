@@ -8,6 +8,8 @@ import Contact from './components/Contact'
 import Services from './components/Services'
 import Reviews from './components/Reviews'
 import Faq from './components/Faq'
+import Pricing from './components/Pricing'
+
 import './App.css'
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
       <Route path='/about' element={<About />} />
       <Route path='/map' element={<Map />} />
       <Route path='/gallery' element={<ImageGallery />} />
+      <Route path='/pricing' element={<Pricing />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/services' element={<Services />} />
       <Route path= '/reviews' element={<Reviews />} />
