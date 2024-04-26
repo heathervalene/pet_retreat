@@ -9,6 +9,7 @@ import Services from './components/Services'
 import Reviews from './components/Reviews'
 import Faq from './components/Faq'
 import Pricing from './components/Pricing'
+import Thanks from './components/Thanks'
 
 import './App.css'
 
@@ -29,6 +30,7 @@ const App = () => {
       <Route path='/services' element={<Services />} />
       <Route path= '/reviews' element={<Reviews />} />
       <Route path='/faq' element={<Faq />} />
+      <Route path='/thanks' element={<Thanks />} />
       </Routes>
       </main>
     </div>

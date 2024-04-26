@@ -1,8 +1,10 @@
 import  { useState, useEffect } from 'react';
 import M from'materialize-css';
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
 
 emailjs.init('JaibVNv_h8LR8WUc4')
+
 
 
 const Contact = () => {
@@ -14,7 +16,7 @@ const Contact = () => {
   const [number, setNumber] = useState('');
   const [owner, setOwner] = useState('');
 
-
+  const navigate = useNavigate();
 
   const handleAddDogInfo = () => {
     setDogInfo([...dogInfo, { name: '', breed: '', age: '', sex: '', weight: '' }]);
@@ -28,12 +30,41 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
+    // Construct email parameters
+    const emailParams = {
+      name: owner,
+      number: number,
+      boardingType: boardingType,
+      message: message,
+      pickUpTime: pickUpTime,
+      dropOffTime: dropOffTime,
+      // Format dog information within the parameters object
+      dogInfo: dogInfo.map((dog, index) => {
+        return `Dog ${index + 1}: 
+          Name: ${dog.name}
+          Age: ${dog.age}
+          Breed: ${dog.breed}
+          Sex: ${dog.sex}
+          Weight: ${dog.weight}`;
+      }).join('\n\n'),
+    };
+  
+    // Send email using emailJS
     emailjs.send(
-      'service_99o7qib'
+      'service_99o7qib',
+      'template_z23gsqq',
+      emailParams,
     )
-
-
+    .then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        navigate('/thanks');
+      },
+      (err) => {
+        console.log('FAILED...', err);
+      }
+    );
   };
 
   useEffect(() => {
