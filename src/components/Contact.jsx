@@ -82,7 +82,7 @@ const Contact = () => {
           </div>
           <div className="input-field body-text">
             <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className="materialize-textarea"></textarea>
-            <label>Share a little bit about your dog and why they would have a great time at the Pet Retreat</label>
+            <label>Share any additional information such as behaviors or medication.</label>
           </div>
           <div className="input-field body-text">
             <input type="text" value={owner} onChange={(e) => setOwner(e.target.value)} />
@@ -92,7 +92,7 @@ const Contact = () => {
             <input type='tel' value={number} onChange={(e) => setNumber(e.target.value)} />
             <label>Phone Number</label>
           </div>
-          <div>We will contact you once we review your request.</div>
+          <h5 className="body-text center">We will contact you once we review your request.</h5>
           <div className="container book">
           <button className="btn btn-primary book" type="submit">Send</button>
           </div>
