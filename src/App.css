@@ -306,14 +306,18 @@ h5.collapsible-header {
 
 /*Pricing*/
 
-.detail-box {
-  border: solid 2px #2B2118;
-  border-radius: 10px;
+.pricing-detail {
   padding: 20px;
+  margin: 20px;
+  font-size: 18px;
 }
 
-.pricing-detail {
-  padding: 0 80px 0 80px;
+.title {
+  padding-top: 10px;
+}
+
+.price {
+  color:#6F1A07;
 }
 
 
