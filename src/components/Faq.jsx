@@ -34,11 +34,15 @@ const Faq = () => {
             </li>
             <li>
             <h5 className="collapsible-header">What are your rates?</h5>
-            <h6 className="collapsible-body">Please check our pricing page.</h6>
+            <h6 className="collapsible-body">Please check our <Link to="/pricing">pricing page.</Link> </h6>
             </li>
             <li>
             <h5 className="collapsible-header">Are the dogs left alone?</h5>
             <h6 className="collapsible-body">Someone is home at all times with the dogs.</h6>
+            </li>
+            <li>
+            <h5 className="collapsible-header">Do you administer medicine?</h5>
+            <h6 className="collapsible-body">Yes, we can give your dog medicine.Please provide detailed instructions on type and dosage.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">What do I bring for overnight stays?</h5>

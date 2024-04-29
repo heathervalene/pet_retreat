@@ -12,7 +12,7 @@ const Contact = () => {
   const [dropOffTime, setDropOffTime] = useState('');
   const [pickUpTime, setPickUpTime] = useState('');
   const [dogInfo, setDogInfo] = useState([]);
-  const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
   const [number, setNumber] = useState('');
   const [owner, setOwner] = useState('');
 
@@ -31,15 +31,15 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   
-    // Construct email parameters
+   
     const emailParams = {
       name: owner,
       number: number,
       boardingType: boardingType,
-      message: message,
+      // message: message,
       pickUpTime: pickUpTime,
       dropOffTime: dropOffTime,
-      // Format dog information within the parameters object
+      
       dogInfo: dogInfo.map((dog, index) => {
         return `Dog ${index + 1}: 
           Name: ${dog.name}
@@ -50,7 +50,7 @@ const Contact = () => {
       }).join('\n\n'),
     };
   
-    // Send email using emailJS
+   
     emailjs.send(
       'service_99o7qib',
       'template_z23gsqq',
@@ -111,10 +111,10 @@ const Contact = () => {
             ))}
             <button type="button" onClick={handleAddDogInfo} className="btn btn-primary dog-info">Add Your Dog Info</button>
           </div>
-          <div className="input-field body-text">
+          {/* <div className="input-field body-text">
             <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className="materialize-textarea"></textarea>
             <label>Share any additional information such as behaviors or medication.</label>
-          </div>
+          </div> */}
           <div className="input-field body-text">
             <input type="text" value={owner} onChange={(e) => setOwner(e.target.value)} />
             <label>Owner Name</label>

@@ -21,7 +21,13 @@ const ImageGallery = () => {
   
     return (
       <div> 
-        <h1 className="body-text center">Gallery</h1>
+        <h1 className="heading center">Gallery</h1>
+        <h5 className="body-text center">Check out the virtual tour!</h5>
+        <div className="container center">
+        <div className="video-container video">
+        <iframe width="911" height="512" src="https://www.youtube.com/embed/P9JHOC62WSs" title="Tropic Tails Farm Virtual Tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      </div>
         <div className= "container image-gallery">
         <div>
           <img className="materialboxed" src="https://i.imgur.com/sxWoLrA.jpeg" alt="dog" />

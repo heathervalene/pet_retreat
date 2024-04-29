@@ -16,7 +16,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <h4 className="body-text location-header">Location</h4>
+        <h4 className="heading location-header">Location</h4>
         <div className="row">
           <div className="col s12 m6">
             <div className="map-container">
@@ -27,9 +27,15 @@ const About = () => {
               <h4 className="body-text">Address:</h4>
               <p className="body-text address">4140 Orange River Loop Rd, Ft. Myers Florida 33905</p>
               <a href="https://www.google.com/maps/place/4140+Orange+River+Loop+Rd,+Fort+Myers,+FL+33905/@26.680396,-81.7544001,17z/data=!3m1!4b1!4m6!3m5!1s0x88db6eebfc143ba7:0x1e086a97743a26cb!8m2!3d26.680396!4d-81.7518252!16s%2Fg%2F11c1_qv85d?entry=ttu" target="_blank" rel="noreferrer"> <i></i> Get Directions</a>
+              
+              
             
           </div>
         </div>
+        <div className='container'>
+          <h4 className="body-text center">Look for the Welcome sign and black gate</h4>
+                <img className="responsive-img gate" src="https://tropic-tails-farm.s3.us-east-2.amazonaws.com/frontsign2.jpg" alt='front'></img>
+              </div>
       </div>
     )
 }

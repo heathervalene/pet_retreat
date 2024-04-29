@@ -34,7 +34,7 @@ const Nav = () => {
       <nav className="hide-on-med-and-up">
         <div className="nav-wrapper">
         <img
-              src="dog.png"
+              src="https://tropic-tails-farm.s3.us-east-2.amazonaws.com/logo.png"
               className="brand-logo right"
               alt="logo"
             />
@@ -90,7 +90,7 @@ const Nav = () => {
         <nav>
           <div className="nav-wrapper">
             <img
-              src="dog.png"
+              src="https://tropic-tails-farm.s3.us-east-2.amazonaws.com/logo.png"
               className="brand-logo left"
               alt="logo"
             />
