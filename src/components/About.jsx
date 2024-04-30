@@ -6,7 +6,7 @@ const About = () => {
         <h1 className="heading center">About Us</h1>
         <div className="row">
           <div className="col s12 m6">
-            <img src="headshots.png" className="responsive-img about-img" alt="headshots" />
+            <img src="https://tropic-tails-farm.s3.us-east-2.amazonaws.com/headshots.png" className="responsive-img about-img" alt="headshots" />
           </div>
           <div className="col s12 m6">
             <div className="body-text about-body">
