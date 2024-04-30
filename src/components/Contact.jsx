@@ -12,9 +12,9 @@ const Contact = () => {
   const [dropOffTime, setDropOffTime] = useState('');
   const [pickUpTime, setPickUpTime] = useState('');
   const [dogInfo, setDogInfo] = useState([]);
-  // const [message, setMessage] = useState('');
   const [number, setNumber] = useState('');
   const [owner, setOwner] = useState('');
+  const [neutered, setNeutered] = useState(false);
 
   const navigate = useNavigate();
 
@@ -48,6 +48,7 @@ const Contact = () => {
           Sex: ${dog.sex}
           Weight: ${dog.weight}`;
       }).join('\n\n'),
+      neutered: neutered ? 'Yes' : 'No', 
     };
   
    
@@ -111,10 +112,8 @@ const Contact = () => {
             ))}
             <button type="button" onClick={handleAddDogInfo} className="btn btn-primary dog-info">Add Your Dog Info</button>
           </div>
-          {/* <div className="input-field body-text">
-            <textarea value={message} onChange={(e) => setMessage(e.target.value)}  className="materialize-textarea"></textarea>
-            <label>Share any additional information such as behaviors or medication.</label>
-          </div> */}
+          
+          
           <div className="input-field body-text">
             <input type="text" value={owner} onChange={(e) => setOwner(e.target.value)} />
             <label>Owner Name</label>
@@ -123,7 +122,18 @@ const Contact = () => {
             <input type='tel' value={number} onChange={(e) => setNumber(e.target.value)} />
             <label>Phone Number</label>
           </div>
-          <h5 className="body-text center">We will contact you once we review your request.</h5>
+          <div className="input-field body-text">
+           
+            <label>
+              <input
+                type="checkbox"
+                checked={neutered}
+                onChange={(e) => setNeutered(e.target.checked)}
+              />
+              <span>Please confirm your dog is neutered</span>
+            </label>
+          </div>
+          
           <div className="container book">
           <button className="btn btn-primary book" type="submit">Send</button>
           </div>
