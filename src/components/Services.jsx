@@ -14,8 +14,8 @@ const Services = () => {
         <h3>Daycare</h3>
         <p className="service-body">Give your furry friend the ultimate day-care experience at Tropic Tails Farm! We offer a stimulating and fun-filled environment where dogs can socialize, exercise, and play under our watchful eye. Located on 5 acres of fenced land, our day-care guests have ample space to run, romp, and explore to their heart's content. Whether your pup needs a full day of fun or just a few hours of companionship, trust The Pet Retreat to provide the love and care they deserve.</p>
       </div>
-      <div className="container book">
-      <Link to="/contact" className="btn btn-primary book">Book Now</Link>
+      <div className="container book service-book">
+      <Link to="/contact" className="btn btn-primary book service-book">Book Now</Link>
       </div>
     </div>
     </div>
