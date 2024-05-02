@@ -5,15 +5,14 @@ import M from "materialize-css";
 const Nav = () => {
   useEffect(() => {
 
-    const dropdowns = document.querySelectorAll('.dropdown-trigger');
-    M.Dropdown.init(dropdowns, {
-      coverTrigger: false
-    });
-
-
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav, {
       draggable: true,
+    });
+
+    const dropdowns = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(dropdowns, {
+      coverTrigger: false
     });
     
   }, []);

@@ -30,8 +30,8 @@ body {
   
 }
 
-.dropdown-content {
-  background-color: #6F1A07;
+#about-dropdown .nav-item a{
+  color:#6F1A07;
 }
 
 .nav-item a {
