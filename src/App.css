@@ -289,10 +289,18 @@ h5.collapsible-header {
   border-radius:20px;
 }
 
+.form-label {
+  color:#2B2118;
+}
+
 @media only screen and (max-width: 768px) {
 
 .form-heading {
   font-size: 25px;
+}
+
+.submit {
+padding-top: 15px;
 }
 }
 

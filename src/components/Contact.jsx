@@ -94,11 +94,11 @@ const Contact = () => {
           </div>
           <div className="input-field body-text">
             <input type="date" value={dropOffTime} onChange={(e) => setDropOffTime(e.target.value)} />
-            <label>Drop Off</label>
+            <label >Drop Off</label>
           </div>
           <div className="input-field body-text">
             <input type="date" value={pickUpTime} onChange={(e) => setPickUpTime(e.target.value)} />
-            <label>Pick Up</label>
+            <label >Pick Up</label>
           </div>
           <div>
             {dogInfo.map((dog, index) => (
@@ -116,11 +116,11 @@ const Contact = () => {
           
           <div className="input-field body-text">
             <input type="text" value={owner} onChange={(e) => setOwner(e.target.value)} />
-            <label>Owner Name</label>
+            <label >Owner Name</label>
           </div>
           <div className="input-field body-text">
             <input type='tel' value={number} onChange={(e) => setNumber(e.target.value)} />
-            <label>Phone Number</label>
+            <label >Phone Number</label>
           </div>
           <div className="input-field body-text">
            
@@ -130,11 +130,11 @@ const Contact = () => {
                 checked={neutered}
                 onChange={(e) => setNeutered(e.target.checked)}
               />
-              <span>Please confirm your dog is neutered</span>
+              <span className="form-label">Please confirm your dog is neutered</span>
             </label>
           </div>
           
-          <div className="container book">
+          <div className="container book submit">
           <button className="btn btn-primary book" type="submit">Send</button>
           </div>
         </form>
