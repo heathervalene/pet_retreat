@@ -5,7 +5,7 @@ const Pricing = () => {
       <div className="container body-text center">
         <h1 className="heading">Pricing</h1>
         <div className="row">
-          <div className="col s6">
+          <div className="col m6">
             <div className='card pricing-card'>
         <h5 className="title">Long Term Boarding</h5>
         <h2 className="price">$40</h2>
@@ -13,7 +13,7 @@ const Pricing = () => {
         <p className="pricing-detail">Available 7 days a week.</p>
         </div>
         </div>
-        <div className="col s6 ">
+        <div className="col m6 ">
           <div className="card">
         <h5 className="title">Daycare</h5>
         <h2 className="price">$30</h2>
