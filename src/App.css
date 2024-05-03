@@ -111,8 +111,13 @@ color: #6F1A07;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F7F3E3);
 }
 
+.main-home {
+  font-size: 80px;
+  margin-top: 80px;
+}
+
 .home-body {
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 28px;
   color: #2B2118;
 }
@@ -133,13 +138,20 @@ color: #6F1A07;
 
 @media only screen and (max-width: 768px) {
 .background-image {
-  height:50%;
+  height:55%;
 
 }
 
 .content {
   margin: 10px;
   padding-top: 45px;
+  
+}
+
+.main-home {
+  font-size:45px;
+  margin-top:40px;
+  
   
 }
 

@@ -7,7 +7,7 @@ const Home = () => {
         <div className="container home">
             
             <div className="content">
-            <h1 className="heading">Tropic Tails Farm</h1>
+            <h1 className="heading main-home">Tropic Tails Farm</h1>
             <h4 className="heading">Country Living for your Dogs</h4>
             <div className="container book">
             <Link to ="/contact" className="btn btn-primary book">Book Now</Link>
