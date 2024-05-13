@@ -30,6 +30,15 @@ const ImageGallery = () => {
       </div>
         <div className= "container image-gallery">
         <div>
+          <img className="materialboxed" src="https://i.imgur.com/vzyS1LV.jpg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/mxEVIgW.jpg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/HuzMtAs.jpg" alt="dog" />
+        </div>
+        <div>
           <img className="materialboxed" src="https://i.imgur.com/sxWoLrA.jpeg" alt="dog" />
         </div>
         <div>
@@ -40,6 +49,9 @@ const ImageGallery = () => {
         </div>
         <div>
           <img className="materialboxed" src="https://i.imgur.com/1bHPurz.jpeg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/ftzvTwe.jpg" alt="dog" />
         </div>
         <div>
           <img className="materialboxed" src="https://i.imgur.com/A6pUUdO.jpeg" alt="dog" />
@@ -121,6 +133,18 @@ const ImageGallery = () => {
         </div>
         <div>
           <img className="materialboxed" src="https://i.imgur.com/97iF3zZ.jpeg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/Uqm2GMn.jpg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/PhwL5FJ.jpg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/7jnID2s.jpg" alt="dog" />
+        </div>
+        <div>
+          <img className="materialboxed" src="https://i.imgur.com/sV8XWVt.jpg" alt="dog" />
         </div>
         </div>
       </div>
