@@ -13,6 +13,7 @@ const Contact = () => {
   const [pickUpTime, setPickUpTime] = useState('');
   const [dogInfo, setDogInfo] = useState([]);
   const [number, setNumber] = useState('');
+  const [email, setEmail] = useState('');
   const [owner, setOwner] = useState('');
   const [neutered, setNeutered] = useState(false);
 
@@ -30,13 +31,21 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(!/^\d{10}$/.test(number)) {
+      alert('Please enter a valid phone number with no dashes or spaces');
+      return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
   
    
     const emailParams = {
       name: owner,
       number: number,
+      email: email,
       boardingType: boardingType,
-      // message: message,
       pickUpTime: pickUpTime,
       dropOffTime: dropOffTime,
       
@@ -121,6 +130,10 @@ const Contact = () => {
           <div className="input-field body-text">
             <input type='tel' value={number} onChange={(e) => setNumber(e.target.value)} />
             <label >Phone Number</label>
+          </div>
+          <div className="input-field body-text">
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <label>Email</label>
           </div>
           <div className="input-field body-text">
            
