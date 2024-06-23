@@ -42,7 +42,7 @@ const Faq = () => {
             </li>
             <li>
             <h5 className="collapsible-header">Do you administer medicine?</h5>
-            <h6 className="collapsible-body">Yes, we can give your dog medicine.Please provide detailed instructions on type and dosage.</h6>
+            <h6 className="collapsible-body">Yes, we can give your dog medicine. Please provide detailed instructions on type and dosage.</h6>
             </li>
             <li>
             <h5 className="collapsible-header">What do I bring for overnight stays?</h5>

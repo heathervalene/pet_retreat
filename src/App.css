@@ -113,6 +113,7 @@ color: #6F1A07;
 
 .main-home {
   font-size: 80px;
+  font-weight: 500;
   margin-top: 80px;
 }
 
@@ -338,7 +339,9 @@ padding-top: 15px;
 
 /*Pricing*/
 
-
+.pricing-book {
+  margin-top:2px;
+}
 
 .pricing-detail {
   padding: 20px;

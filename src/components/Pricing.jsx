@@ -1,9 +1,12 @@
-
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
     return (
       <div className="container body-text center">
         <h1 className="heading">Pricing</h1>
+        <div className="container book">
+            <Link to ="/contact" className="btn btn-primary book pricing-book">Book Now</Link>
+            </div>
         <div className="row">
           <div className="col m6">
             <div className='card pricing-card'>
@@ -12,6 +15,7 @@ const Pricing = () => {
         <p className="pricing-detail">This cost covers 1 dog, per 24 hour period. Your pup will be cared for as if they are our own. All dogs sleep inside at night, not kept in cages and are fed on their regular schedule.</p>
         <p className="pricing-detail">Available 7 days a week.</p>
         </div>
+       
         </div>
         <div className="col m6 ">
           <div className="card">
