@@ -14,7 +14,6 @@ const Nav = () => {
     M.Dropdown.init(dropdowns, {
       coverTrigger: false
     });
-    
   }, []);
 
   useEffect(() => {
